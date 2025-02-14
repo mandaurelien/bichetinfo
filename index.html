@@ -412,13 +412,10 @@ périphériques
     <script src="js/main.js"></script>
 
     <script>
-        document.querySelectorAll('*').forEach(el => {
-            let styles = window.getComputedStyle(el);
-            if (styles.position === "absolute" || styles.position === "fixed" || styles.height === "100vh") {
-                console.log("Problème potentiel :", el.tagName, el.className, styles.position, styles.height);
-            }
+        document.querySelectorAll('.show.bg-white.position-fixed').forEach(el => {
+            el.style.display = "none";
         });
-    </script>    
+    </script>
 </body>
 
 </html>
