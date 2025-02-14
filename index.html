@@ -412,8 +412,11 @@ périphériques
     <script src="js/main.js"></script>
 
     <script>
-        document.querySelectorAll('.show.bg-white.position-fixed').forEach(el => {
-            el.style.display = "none";
+        document.querySelectorAll('*').forEach(el => {
+            el.style.display = "block";
+            el.style.opacity = "1";
+            el.style.visibility = "visible";
+            el.style.height = "auto";
         });
     </script>
 </body>
